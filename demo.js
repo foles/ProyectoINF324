@@ -515,6 +515,312 @@ function init() {
             mesh.position.set(-1.5, 1.7, 13.7);
             //mesh.rotation.y = -Math.PI / 4;
         })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(1, 1.7, 13.7);
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(3.5, 1.7, 13.7);
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(6, 1.7, 13.7);
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.8, 1.7, 9);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.8, 1.7, 6.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.8, 1.7, 4);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.8, 1.7, 1.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.8, 1.7, -1);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.8, 1.7, -3.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.8, 1.7, -6);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.8, 1.7, -8.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+
+
+        // paantallas derecha
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.8, 1.7, 12);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.8, 1.7, 9.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.8, 1.7, 7);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.8, 1.7, 4.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.8, 1.7, 2);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.8, 1.7, -0.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.8, 1.7, -3);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerScreen.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.8, 1.7, -5.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
     })
 
     // teclado
@@ -536,7 +842,6 @@ function init() {
             mesh.scale.y = 4;
             mesh.scale.z = 3;
             mesh.position.set(-4.2, 1.7, 13);
-            //mesh.rotation.y = -Math.PI / 4;
         })
 
         objLoader.load("models/computerKeyboard.obj", function(mesh) {
@@ -552,8 +857,330 @@ function init() {
             mesh.scale.y = 4;
             mesh.scale.z = 3;
             mesh.position.set(-1.7, 1.7, 13);
-            //mesh.rotation.y = -Math.PI / 4;
         })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(0.8, 1.7, 13);
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(3.3, 1.7, 13);
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(5.8, 1.7, 13);
+        })
+
+        // izquierda
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.15, 1.7, 9.2);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.15, 1.7, 9.2);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.15, 1.7, 6.7);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.15, 1.7, 4.2);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.15, 1.7, 1.7);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.15, 1.7, -0.8);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.15, 1.7, -3.3);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.15, 1.7, -5.8);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.15, 1.7, -8.3);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        // derecha
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.15, 1.7, 11.7);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.15, 1.7, 9.2);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.15, 1.7, 6.7);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.15, 1.7, 4.2);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.15, 1.7, 1.7);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.15, 1.7, -0.8);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.15, 1.7, -3.3);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerKeyboard.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.15, 1.7, -5.8);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
     })
 
     //mouse
@@ -575,7 +1202,6 @@ function init() {
             mesh.scale.y = 4;
             mesh.scale.z = 3;
             mesh.position.set(-3.2, 1.7, 13);
-            //mesh.rotation.y = -Math.PI / 4;
         })
 
         objLoader.load("models/computerMouse.obj", function(mesh) {
@@ -591,8 +1217,338 @@ function init() {
             mesh.scale.y = 4;
             mesh.scale.z = 3;
             mesh.position.set(-5.7, 1.7, 13);
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-0.7, 1.7, 13);
+        })
+
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(1.8, 1.7, 13);
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(4.3, 1.7, 13);
             //mesh.rotation.y = -Math.PI / 4;
         })
+
+        //izrquierda
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.2, 1.7, 10.7);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.2, 1.7, 8.2);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.2, 1.7, 5.7);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.2, 1.7, 3.2);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.2, 1.7, 0.7);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.2, 1.7, -1.8);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.2, 1.7, -4.3);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(8.2, 1.7, -6.8);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        //derecha
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.2, 1.7, 10.2);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.2, 1.7, 7.7);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.2, 1.7, 5.2);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.2, 1.7, 2.7);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.2, 1.7, 0.2);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.2, 1.7, -2.3);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.2, 1.7, -4.8);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/computerMouse.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 4;
+            mesh.scale.y = 4;
+            mesh.scale.z = 3;
+            mesh.position.set(-8.2, 1.7, -7.3);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+    })
+
+    mtlLoader.load("models/chair.mtl", function(materials) {
+        materials.preload();
+        var objLoader = new THREE.OBJLoader();
+        objLoader.setMaterials(materials);
+        objLoader.load("models/chair.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-5.3, 0, 12.5);
+            mesh.rotation.y = -Math.PI;
+
+        })
+
     })
 
     //camara
