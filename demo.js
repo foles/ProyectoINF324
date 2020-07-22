@@ -10,7 +10,7 @@ var USE_WIREFRAME = false;
 function init() {
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0x00538C);
-    camera = new THREE.PerspectiveCamera(90, 1280 / 720, 0.1, 1000);
+    camera = new THREE.PerspectiveCamera(90, 1080 / 620, 0.1, 1000);
 
     floorTexture = THREE.ImageUtils.loadTexture("models/floor.jpg");
     floorTexture.wrapS = THREE.RepeatWrapping;
@@ -88,6 +88,35 @@ function init() {
     scene.add(meshPared3);
 
 
+    meshBoard = new THREE.Mesh(
+        new THREE.BoxGeometry(12, 6, 0.01),
+        new THREE.MeshBasicMaterial({
+            map: THREE.ImageUtils.loadTexture("models/vscode.jpg")
+        })
+    );
+    meshBoard.position.y += 5.5;
+    meshBoard.position.x = 0;
+    meshBoard.position.z = -14;
+    meshBoard.rotation.y -= Math.PI;
+    meshBoard.receiveShadow = true;
+    meshBoard.castShadow = true;
+    scene.add(meshBoard);
+
+    meshBoard2 = new THREE.Mesh(
+        new THREE.BoxGeometry(12.1, 6.1, 1),
+
+    );
+    meshBoard2.position.y += 5.5;
+    meshBoard2.position.x = 0;
+    meshBoard2.position.z = -14.5;
+    meshBoard2.rotation.y -= Math.PI;
+    meshBoard2.receiveShadow = true;
+    meshBoard2.castShadow = true;
+    scene.add(meshBoard2);
+
+
+
+
     ambientLight = new THREE.AmbientLight(0xffffff, 0.4)
     scene.add(ambientLight)
 
@@ -97,6 +126,7 @@ function init() {
     light.shadow.camera.near = 0.1;
     light.shadow.camera.far = 25;
     scene.add(light);
+
 
 
 
@@ -1528,12 +1558,14 @@ function init() {
         })
     })
 
+
+    //sillas 
+
     mtlLoader.load("models/chair.mtl", function(materials) {
         materials.preload();
         var objLoader = new THREE.OBJLoader();
         objLoader.setMaterials(materials);
         objLoader.load("models/chair.obj", function(mesh) {
-
             mesh.traverse(function(node) {
                 if (node instanceof THREE.Mesh) {
                     node.castShadow = true;
@@ -1544,14 +1576,663 @@ function init() {
             mesh.scale.x = 5;
             mesh.scale.y = 5;
             mesh.scale.z = 5;
-            mesh.position.set(-5.3, 0, 12.5);
+            mesh.position.set(-8, 0, -12.5);
             mesh.rotation.y = -Math.PI;
+        })
+
+    })
+
+    mtlLoader.load("models/chair.mtl", function(materials) {
+        materials.preload();
+        var objLoader = new THREE.OBJLoader();
+        objLoader.setMaterials(materials);
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-5.5, 0, 12.5);
+            mesh.rotation.y = -Math.PI;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-2.5, 0, 12.5);
+            mesh.rotation.y = -Math.PI;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(0, 0, 12.5);
+            mesh.rotation.y = -Math.PI;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(2.5, 0, 12.5);
+            mesh.rotation.y = -Math.PI;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(5, 0, 12.5);
+            mesh.rotation.y = -Math.PI;
+        })
+
+        //izq
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(7.5, 0, 10);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(7.5, 0, 7.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(7.5, 0, 5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(7.5, 0, 2.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(7.5, 0, 0);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(7.5, 0, -2.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(7.5, 0, -5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(7.5, 0, -7.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        //derecha
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-7.5, 0, 10.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-7.5, 0, 8);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-7.5, 0, 5.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-7.5, 0, 3);
+            mesh.rotation.y = Math.PI / 2;
+        })
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-7.5, 0, 0.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-7.5, 0, -2);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-7.5, 0, -4.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-7.5, 0, -7);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        //centro 1
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(1.5, 0, 5.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(1.5, 0, 3);
+            mesh.rotation.y = Math.PI / 2;
+        })
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(1.5, 0, 0.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(1.5, 0, -2);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        //centro 2
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-1.5, 0, 5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-1.5, 0, 2.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-1.5, 0, 0);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+        objLoader.load("models/chair.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-1.5, 0, -2.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+    })
+
+
+    mtlLoader.load("models/doorway.mtl", function(materials) {
+        materials.preload();
+        var objLoader = new THREE.OBJLoader();
+        objLoader.setMaterials(materials);
+        objLoader.load("models/doorway.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 6;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(9.3, 0, -13);
+            mesh.rotation.y = Math.PI / 2;
 
         })
 
     })
 
-    //camara
+    //laptop
+
+    mtlLoader.load("models/laptop.mtl", function(materials) {
+        materials.preload();
+        var objLoader = new THREE.OBJLoader();
+        objLoader.setMaterials(materials);
+        objLoader.load("models/laptop.obj", function(mesh) {
+
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 6;
+            mesh.scale.y = 5;
+            mesh.scale.z = 5;
+            mesh.position.set(-7, 2, -12);
+            mesh.rotation.y = -Math.PI / 64;
+        })
+
+        objLoader.load("models/laptop.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 4;
+            mesh.scale.z = 4;
+            mesh.position.set(1, 1.7, -1);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/laptop.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 4;
+            mesh.scale.z = 4;
+            mesh.position.set(1, 1.7, 1.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+
+
+        objLoader.load("models/laptop.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 4;
+            mesh.scale.z = 4;
+            mesh.position.set(1, 1.7, 4);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/laptop.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 4;
+            mesh.scale.z = 4;
+            mesh.position.set(1, 1.7, 6.5);
+            mesh.rotation.y = -Math.PI / 2;
+        })
+
+        objLoader.load("models/laptop.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 4;
+            mesh.scale.z = 4;
+            mesh.position.set(-1.2, 1.7, 4);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/laptop.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 4;
+            mesh.scale.z = 4;
+            mesh.position.set(-1.2, 1.7, 1.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/laptop.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 4;
+            mesh.scale.z = 4;
+            mesh.position.set(-1.2, 1.7, -1);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+        objLoader.load("models/laptop.obj", function(mesh) {
+            mesh.traverse(function(node) {
+                if (node instanceof THREE.Mesh) {
+                    node.castShadow = true;
+                    node.receiveShadow = true;
+                }
+            })
+            scene.add(mesh);
+            mesh.scale.x = 5;
+            mesh.scale.y = 4;
+            mesh.scale.z = 4;
+            mesh.position.set(-1.2, 1.7, -3.5);
+            mesh.rotation.y = Math.PI / 2;
+        })
+
+
+
+    })
+
+    mtlLoader.load("models/desk.mtl", function(materials) {
+            materials.preload();
+            var objLoader = new THREE.OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.load("models/desk.obj", function(mesh) {
+
+                mesh.traverse(function(node) {
+                    if (node instanceof THREE.Mesh) {
+                        node.castShadow = true;
+                        node.receiveShadow = true;
+                    }
+                })
+                scene.add(mesh);
+                mesh.scale.x = 6;
+                mesh.scale.y = 5;
+                mesh.scale.z = 5;
+                mesh.position.set(-5, 0, -12);
+                mesh.rotation.y = -Math.PI / 64;
+
+            })
+
+        })
+        //camara
 
     camera.position.set(8, player.height, -12);
     camera.lookAt(new THREE.Vector3(0, player.height, 0))
@@ -1574,8 +2255,26 @@ function init() {
 function animate() {
     requestAnimationFrame(animate);
 
+    if (camera.position.x > 8) {
+        camera.position.x = 8;
+    }
+
+    if (camera.position.x < -8) {
+        camera.position.x = -8;
+    }
+
+    if (camera.position.z > 13) {
+        camera.position.z = 13;
+    }
+
+    if (camera.position.z < -13) {
+        camera.position.z = -13;
+    }
+
+
     //wsad move camera 
     if (keyboard[87]) {
+
         camera.position.x -= Math.sin(camera.rotation.y) * player.speed;
         camera.position.z -= -Math.cos(camera.rotation.y) * player.speed;
     }
