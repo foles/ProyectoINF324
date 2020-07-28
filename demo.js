@@ -10,6 +10,7 @@ var USE_WIREFRAME = false;
 function init() {
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0x00538C);
+    
     camera = new THREE.PerspectiveCamera(90, 1080 / 620, 0.1, 1000);
 
     floorTexture = THREE.ImageUtils.loadTexture("models/floor.jpg");
